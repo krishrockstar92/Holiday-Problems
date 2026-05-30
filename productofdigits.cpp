@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    int product=1;
+    while(n>0){
+        product*=n%10;
+        n/=10;
+    } 
+    cout<<"The product of the digits is: ";
+    cout<<product<<endl;
+}
